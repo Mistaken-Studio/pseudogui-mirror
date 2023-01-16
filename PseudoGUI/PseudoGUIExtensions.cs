@@ -2,6 +2,9 @@
 
 namespace Mistaken.PseudoGUI;
 
+/// <summary>
+/// PseudoGUI Extensions.
+/// </summary>
 public static class PseudoGUIExtensions
 {
     /// <summary>
