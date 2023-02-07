@@ -85,7 +85,8 @@ public sealed class PseudoGUIHandler : MonoBehaviour
     private static readonly object ToIgnoreLock = new();
     private static readonly HashSet<Player> ToIgnore = new();
 
-    private static bool IsConnected(Player player) => player?.GameObject != null && player.Connection is not null;
+    private static bool IsConnected(Player player)
+        => player?.ReferenceHub != null && player.Connection is not null;
 
     private readonly ConcurrentDictionary<Player, string> constructedStrings = new();
     private int frames;
